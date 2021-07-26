@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Phone Photo Print"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-thin"
+        android:textAlignment="center"
+        android:textSize="38sp"/>
+
+    <EditText
+        android:id="@+id/numberOfPrints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:hint="Number of Prints"/>
+
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/firstPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="4 x 6 (19 cents)" />
+
+        <RadioButton
+            android:id="@+id/secondPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="5 x 7 (49 cents)" />
+
+        <RadioButton
+            android:id="@+id/thirdPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="8 x 10 (79 cents)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:text="order prints"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:id="@+id/outputTv"/>
+</LinearLayout>
